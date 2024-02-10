@@ -41,3 +41,38 @@ nav {
   from {}
   to {}
 }
+.container:hover{
+
+}
+#top:hover{
+  transform:rotate(45deg);
+}
+#middle:hover{
+  transform:none;
+}
+#bottom:hover{
+  transform:rotate(-45deg);
+}
+@keyframes top {
+  from {
+    transform: 0%;
+  }
+  to {
+    transform: rotateZ(45deg) translateX(22px) translateY(22px);
+  }
+}
+@keyframes middle {
+  from {
+    opacity:1;
+  }
+  to {opacity:0;
+  }
+}
+@keyframes bottom {
+  from {
+    transform: 0%;
+  }
+  to {
+    transform: rotateZ(-45deg) translateX(25px) translateY(-25px);
+  }
+}
